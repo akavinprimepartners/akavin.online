@@ -114,3 +114,87 @@ body {
     text-align: center;
     padding: 15px 0;
 }
+
+/* Evolve Inc Section */
+
+.evolve-section {
+background: linear-gradient(to right, #f8fbff, #eef3ff);
+}
+
+.evolve-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+
+.evolve-content h2 {
+font-size: 38px;
+color: #d62828;
+margin-bottom: 10px;
+}
+
+.evolve-content h3 {
+color: #0a2540;
+margin-bottom: 20px;
+}
+
+.evolve-content p {
+margin-bottom: 18px;
+}
+
+.evolve-features {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 18px;
+margin-top: 30px;
+}
+
+.feature-card {
+background: #fff;
+padding: 18px;
+border-radius: 10px;
+box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.feature-card h4 {
+color: #0a2540;
+margin-bottom: 10px;
+}
+
+.evolve-btn {
+display: inline-block;
+margin-top: 30px;
+background: #d62828;
+color: #fff;
+padding: 12px 24px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.evolve-visual img {
+width: 100%;
+border-radius: 16px;
+box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Mobile */
+
+@media(max-width: 900px){
+
+.evolve-grid {
+    grid-template-columns: 1fr;
+}
+.evolve-features {
+    grid-template-columns: 1fr;
+}
+.nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 32px;
+}
+
+}
