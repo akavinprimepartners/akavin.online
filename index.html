@@ -1,190 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Akavin Prime Partners</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolve Inc Dubai | AI • VR • Digital Transformation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b1020;
+color:#ffffff;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:80px 0;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+p{
+color:#d1d5db;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid #2563eb;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(11,16,32,.85),rgba(11,16,32,.9)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:700;
+}
+
+.hero span{
+color:#3b82f6;
+}
+
+.hero p{
+max-width:700px;
+margin:20px 0 30px;
+font-size:18px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:16px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#60a5fa;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:#111827;
+padding:30px;
+border-radius:15px;
+}
+
+.stat h3{
+font-size:40px;
+color:#3b82f6;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-box{
+background:#111827;
+padding:40px;
+border-radius:20px;
+max-width:900px;
+margin:auto;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+color:#9ca3af;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+color:#d1d5db;
+}
+
+.nav{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(11,16,32,.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.nav .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#3b82f6;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.section-title h2{
+font-size:30px;
+}
+
+.nav .container{
+flex-direction:column;
+}
+}
+</style>
 </head>
+
 <body>
 
-<!-- Header / Navigation -->
-<header class="header">
-    <div class="container nav-container">
-        <div class="logo">AKAVIN PRIME PARTNERS</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#evolve">Evolve Inc</a></li>
-                <li><a href="#leadone">Lead One Partners</a></li>
-                <li><a href="#lumi">Lumi Star Academy</a></li>
-                <li><a href="#carex">Prime CareX Supplies</a></li>
-                <li><a href="#aster">Prime Aster Strata</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#login" class="login-btn">Customer Login</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<nav class="nav">
+<div class="container">
+<div class="logo">EVOLVE INC DUBAI</div>
+<div>
+<a href="#about">About</a>
+<a href="#services">Solutions</a>
+<a href="#industries">Industries</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
 
-<!-- Home -->
-<section id="home" class="hero">
-    <div class="container">
-        <h1>Akavin Prime Partners</h1>
-        <p>
-            A multi-vertical advisory and solutions platform delivering
-            strategic consulting, education, healthcare supplies, and
-            business transformation services.
-        </p>
-    </div>
-</section>
+<section class="hero">
+<div class="container">
+<h1>Transforming Business Through <span>AI, VR & Digital Innovation</span></h1>
 
-<!-- About -->
-<section class="section">
-    <div class="container">
-        <h2>About Akavin Prime Partners</h2>
-        <p>
-            Akavin Prime Partners operates as a strategic umbrella organization
-            supporting specialized verticals across advisory, education,
-            healthcare, and enterprise solutions. We focus on governance,
-            compliance, operational excellence, and sustainable growth.
-        </p>
-    </div>
-</section>
+<p>
+Evolve Inc Dubai empowers businesses with Artificial Intelligence,
+Interactive Product Visualization, Virtual Reality, Augmented Reality,
+Digital Catalogs, and Business Automation solutions that drive growth,
+engagement, and transformation.
+</p>
 
-<!-- Evolve Inc -->
-<section id="evolve" class="section evolve-section">
-    <div class="container evolve-grid">
-    <div class="evolve-content">
-        <h2>Evolve Inc</h2>
-        <h3>AI + VR Solutions for Real Estate</h3>
-        <p>
-            Evolve Inc delivers immersive Virtual Reality and AI-powered
-            visualization solutions for real estate developers, builders,
-            architects, and property marketing companies.
-        </p>
-        <p>
-            Help your clients experience properties before construction
-            completion through interactive VR walkthroughs, smart
-            presentations, and AI-enhanced visualization systems.
-        </p>
-        <div class="evolve-features">
-            <div class="feature-card">
-                <h4>Virtual Property Walkthroughs</h4>
-                <p>
-                    Realistic 360° immersive tours for apartments,
-                    villas, offices, and commercial spaces.
-                </p>
-            </div>
-            <div class="feature-card">
-                <h4>AI-Powered Real Estate Marketing</h4>
-                <p>
-                    Artificial Intelligence enhances visuals,
-                    customer engagement, and property presentation.
-                </p>
-            </div>
-            <div class="feature-card">
-                <h4>No Need To Travel</h4>
-                <p>
-                    Your client can experience the property directly
-                    from your office or remotely from anywhere.
-                </p>
-            </div>
-            <div class="feature-card">
-                <h4>Save Time & Expenses</h4>
-                <p>
-                    Reduce site visits, travel costs, energy,
-                    and presentation delays while accelerating deals.
-                </p>
-            </div>
-        </div>
-        <a href="mailto:business@akavin.online" class="evolve-btn">
-            Book a Demo
-        </a>
-    </div>
-    <div class="evolve-visual">
-        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop"
-             alt="VR Real Estate Experience">
-    </div>
+<a href="#contact" class="btn">Schedule Consultation</a>
+<a href="#services" class="btn btn-outline">Explore Solutions</a>
 </div>
 </section>
 
+<section id="about">
+<div class="container">
+<div class="section-title">
+<h2>About Us</h2>
+<p>Future-ready technology solutions for modern enterprises.</p>
+</div>
 
-<!-- Lead One Partners -->
-<section id="leadone" class="section light">
-    <div class="container">
-        <h2>Lead One Partners</h2>
-        <p>
-            Lead One Partners delivers strategic advisory services including
-            corporate governance, CSR frameworks, leadership advisory,
-            and business transformation initiatives.
-        </p>
-    </div>
+<div class="grid">
+<div class="card">
+<h3>Our Mission</h3>
+<p>
+Help organizations visualize better, sell better, and engage customers through intelligent digital experiences.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>
+To become a leading transformation partner delivering AI-powered and immersive technologies globally.
+</p>
+</div>
+
+<div class="card">
+<h3>Core Expertise</h3>
+<p>
+Artificial Intelligence, VR, AR, 3D Visualization, Digital Commerce, Interactive Catalogs, and Automation.
+</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Lumi Star Academy -->
-<section id="lumi" class="section">
-    <div class="container">
-        <h2>Lumi Star Academy</h2>
-        <p>
-            Lumi Star Academy focuses on professional education, skill development,
-            leadership programs, and career-focused learning solutions for
-            individuals and organizations.
-        </p>
-    </div>
+<section>
+<div class="container">
+<div class="stats">
+<div class="stat">
+<h3>AI</h3>
+<p>Powered Experiences</p>
+</div>
+
+<div class="stat">
+<h3>VR</h3>
+<p>Immersive Solutions</p>
+</div>
+
+<div class="stat">
+<h3>AR</h3>
+<p>Interactive Engagement</p>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Digital Innovation</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Prime CareX Supplies -->
-<section id="carex" class="section light">
-    <div class="container">
-        <h2>Prime CareX Supplies</h2>
-        <p>
-            Prime CareX Supplies provides healthcare and medical supplies with
-            a focus on quality, reliability, and ethical distribution across
-            clinics, hospitals, and care providers.
-        </p>
-    </div>
+<section id="services">
+<div class="container">
+
+<div class="section-title">
+<h2>Our Solutions</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>AI Product Visualization</h3>
+<ul>
+<li>Room Visualization</li>
+<li>Product Placement</li>
+<li>Material Preview</li>
+<li>AI Recommendations</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Virtual Reality</h3>
+<ul>
+<li>Property Walkthroughs</li>
+<li>Virtual Showrooms</li>
+<li>Training Simulations</li>
+<li>Exhibition Experiences</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Augmented Reality</h3>
+<ul>
+<li>Furniture Placement</li>
+<li>Retail Engagement</li>
+<li>Product Demonstrations</li>
+<li>Interactive Marketing</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Digital Catalogs</h3>
+<ul>
+<li>Interactive Catalogs</li>
+<li>Product Discovery</li>
+<li>Smart Search</li>
+<li>Rich Media Content</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Business Automation</h3>
+<ul>
+<li>Workflow Automation</li>
+<li>Lead Qualification</li>
+<li>Customer Support AI</li>
+<li>Reporting Systems</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Digital Transformation</h3>
+<ul>
+<li>Technology Strategy</li>
+<li>Process Optimization</li>
+<li>Innovation Consulting</li>
+<li>Growth Enablement</li>
+</ul>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- Prime Aster Strata -->
-<section id="aster" class="section">
-    <div class="container">
-        <h2>Prime Aster Strata</h2>
-        <p>
-            Prime Aster Strata delivers structured enterprise solutions, project
-            advisory, and scalable business frameworks for emerging and
-            established organizations.
-        </p>
-    </div>
+<section id="industries">
+<div class="container">
+
+<div class="section-title">
+<h2>Industries We Serve</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>AEC Industry</h3>
+<p>BIM, Digital Catalogs, Material Libraries, Project Visualization.</p>
+</div>
+
+<div class="card">
+<h3>Real Estate</h3>
+<p>Virtual Tours, AI Sales Experiences, Investor Presentations.</p>
+</div>
+
+<div class="card">
+<h3>Interior Design</h3>
+<p>Material Selection, Product Visualization, Space Planning.</p>
+</div>
+
+<div class="card">
+<h3>Manufacturing</h3>
+<p>Product Catalog Digitization and Interactive Commerce.</p>
+</div>
+
+<div class="card">
+<h3>Education</h3>
+<p>Immersive Learning and Technology Awareness Programs.</p>
+</div>
+
+<div class="card">
+<h3>Retail</h3>
+<p>Customer Engagement, Visualization, Interactive Shopping.</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- Customer Login -->
-<section id="login" class="section light">
-    <div class="container">
-        <h2>Customer Login</h2>
-        <form class="login-form">
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <p class="note">* Login functionality will be enabled soon</p>
-        </form>
-    </div>
+<section id="contact" class="contact">
+<div class="container">
+
+<div class="contact-box">
+
+<h2>Let's Build The Future Together</h2>
+
+<p>
+Whether you're a manufacturer, supplier, architect,
+developer, educational institution, or technology-driven
+organization, Evolve Inc Dubai can help transform your
+ideas into powerful digital experiences.
+</p>
+
+<br>
+
+<h3>Contact Us</h3>
+
+<p>
+📍 Dubai, United Arab Emirates
+</p>
+
+<p>
+📧 business@evolveincdubai.com
+</p>
+
+<p>
+📱 +91 99623 84650
+</p>
+
+<p>
+🌐 www.evolveincdubai.com
+</p>
+
+<br>
+
+<a href="mailto:business@evolveincdubai.com" class="btn">
+Get In Touch
+</a>
+
+</div>
+
+</div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:akavin.prime.partners@gmail.com">akavin.prime.partners@gmail.com</a></p>
-        <p>Phone: +91 99623 84650</p>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <p>© 2026 Akavin Prime Partners. All rights reserved.</p>
+<footer>
+© 2026 Evolve Inc Dubai | AI • VR • AR • Digital Transformation
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
