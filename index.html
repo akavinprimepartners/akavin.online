@@ -1,464 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evolve Inc Dubai | AI • VR • Digital Transformation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Akavin Prime Partners | AI • VR • AEC • Digital Transformation</title>
+  <meta name="description" content="Akavin Prime Partners delivers AI, VR, AEC innovation, digital commerce, and business automation. Transform property sales with VR & AI solutions in UAE & India.">
+  <meta name="keywords" content="AI, VR, AEC, Digital Transformation, Dubai, Real Estate VR, BIM, Automation, Akavin, Artificial Intelligence, Virtual Reality">
+  <meta name="author" content="Akavin Prime Partners">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Akavin Prime Partners | AI • VR • AEC • Digital Transformation">
+  <meta property="og:description" content="Building a future-ready world through AI, VR, AEC & digital innovation. Experience properties before they exist.">
+  <meta property="og:image" content="https://www.akavin.online/assets/logo.svg">
+  <meta property="og:url" content="https://www.akavin.online">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Akavin Prime Partners">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Akavin Prime Partners | AI • VR • AEC">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    :root {
+      --primary: #D90A0B;
+      --primary-dark: #A30000;
+      --primary-glow: rgba(217, 10, 11, 0.3);
+      --secondary: #767676;
+      --secondary-light: #B0B0B0;
+      --bg: #0A0A0A;
+      --card-bg: #141414;
+      --card-border: #2a2a2a;
+      --text: #FFFFFF;
+      --text-muted: #CCCCCC;
+      --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-body{
-background:#0b1020;
-color:#ffffff;
-line-height:1.6;
-}
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1a1a1a; }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+    html { scroll-behavior: smooth; }
 
-section{
-padding:80px 0;
-}
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
-h1,h2,h3{
-margin-bottom:20px;
-}
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(217, 10, 11, 0.3);
+      padding: 0.8rem 0;
+    }
 
-p{
-color:#d1d5db;
-}
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-.btn{
-display:inline-block;
-padding:14px 28px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:50px;
-margin-right:10px;
-transition:0.3s;
-}
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-.btn:hover{
-background:#1d4ed8;
-}
+    .logo-img {
+      height: 50px;
+      width: auto;
+    }
 
-.btn-outline{
-background:transparent;
-border:2px solid #2563eb;
-}
+    .logo-text h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: white;
+    }
 
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-background:
-linear-gradient(rgba(11,16,32,.85),rgba(11,16,32,.9)),
-url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-}
+    .logo-text p {
+      font-size: 0.65rem;
+      color: var(--primary);
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
 
-.hero h1{
-font-size:60px;
-font-weight:700;
-}
+    nav { display: flex; gap: 1.8rem; flex-wrap: wrap; }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--primary); }
 
-.hero span{
-color:#3b82f6;
-}
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.6) 100%), url('https://images.unsplash.com/photo-1512453979798-5ea266f3e76a?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      display: flex;
+      align-items: center;
+    }
 
-.hero p{
-max-width:700px;
-margin:20px 0 30px;
-font-size:18px;
-}
+    .hero-content { max-width: 800px; padding: 0 2rem; }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      font-family: 'Michroma', sans-serif;
+    }
+    .hero h1 span { color: var(--primary); }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
 
-.section-title{
-text-align:center;
-margin-bottom:50px;
-}
+    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn, .btn-outline {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 12px rgba(217,10,11,0.4);
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: white;
+      background: transparent;
+    }
+    .btn-outline:hover {
+      background: rgba(217,10,11,0.2);
+      transform: translateY(-3px);
+    }
 
-.section-title h2{
-font-size:40px;
-}
+    section { padding: 5rem 0; }
+    .section-title { text-align: center; margin-bottom: 3rem; }
+    .section-title h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .badge {
+      display: inline-block;
+      background: rgba(217,10,11,0.15);
+      color: var(--primary);
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.8rem;
+      transition: var(--transition);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: 0 20px 30px -15px rgba(217,10,11,0.2);
+    }
+    .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
+    .card ul { list-style: none; padding-left: 0; }
+    .card li {
+      padding-left: 1.2rem;
+      position: relative;
+      margin-bottom: 0.5rem;
+      color: var(--text-muted);
+    }
+    .card li::before { content: "▹"; position: absolute; left: 0; color: var(--primary); }
 
-.card{
-background:#111827;
-padding:30px;
-border-radius:16px;
-transition:.3s;
-border:1px solid rgba(255,255,255,.05);
-}
+    /* VR Showcase */
+    .vr-showcase {
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      border-top: 1px solid rgba(217,10,11,0.3);
+      border-bottom: 1px solid rgba(217,10,11,0.3);
+    }
+    .vr-grid { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; }
+    .vr-content { flex: 1; }
+    .vr-content h2 { font-size: 2.3rem; margin-bottom: 1rem; }
+    .vr-content ul { list-style: none; margin: 1.5rem 0; }
+    .vr-content li { margin-bottom: 0.7rem; display: flex; align-items: center; gap: 8px; }
+    .vr-content li::before { content: "✓"; color: var(--primary); font-weight: bold; }
+    .vr-image { flex: 1; text-align: center; }
+    .vr-image img { max-width: 100%; border-radius: 24px; box-shadow: 0 20px 30px -10px black; }
 
-.card:hover{
-transform:translateY(-8px);
-}
+    /* Stats */
+    .stats-section { background: radial-gradient(circle at 10% 20%, #111, #050505); }
+    .stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; text-align: center; }
+    .stat-item h3 { font-size: 3rem; font-weight: 800; color: var(--primary); font-family: 'Michroma', sans-serif; }
 
-.card h3{
-color:#60a5fa;
-}
+    /* Ecosystem */
+    .timeline { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .timeline-node {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 30px;
+      width: 200px;
+      text-align: center;
+      border-bottom: 4px solid var(--primary);
+      transition: all 0.3s;
+    }
+    .timeline-node:hover { transform: scale(1.05); background: #1f1f1f; }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
+    /* Contact */
+    .contact-section { background: linear-gradient(145deg, #0e0e0e, #080808); }
+    .contact-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .contact-card {
+      background: var(--card-bg);
+      padding: 1.5rem 2rem;
+      border-radius: 20px;
+      min-width: 200px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+    .contact-card h4 { color: var(--primary); margin-bottom: 0.5rem; }
 
-.stat{
-background:#111827;
-padding:30px;
-border-radius:15px;
-}
+    /* Footer */
+    footer {
+      background: #020202;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-top: 1px solid rgba(217,10,11,0.2);
+    }
+    .footer-tagline { color: var(--primary); font-weight: 600; margin: 1rem 0; }
 
-.stat h3{
-font-size:40px;
-color:#3b82f6;
-}
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      z-index: 999;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); background: #20b859; }
 
-.contact{
-text-align:center;
-}
-
-.contact-box{
-background:#111827;
-padding:40px;
-border-radius:20px;
-max-width:900px;
-margin:auto;
-}
-
-footer{
-padding:30px;
-text-align:center;
-border-top:1px solid rgba(255,255,255,.08);
-color:#9ca3af;
-}
-
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
-color:#d1d5db;
-}
-
-.nav{
-position:fixed;
-width:100%;
-top:0;
-background:rgba(11,16,32,.85);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.nav .container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 0;
-}
-
-.logo{
-font-size:24px;
-font-weight:700;
-color:#3b82f6;
-}
-
-.nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-.section-title h2{
-font-size:30px;
-}
-
-.nav .container{
-flex-direction:column;
-}
-}
-</style>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-container { flex-direction: column; text-align: center; }
+      nav { justify-content: center; gap: 1rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .section-title h2 { font-size: 1.8rem; }
+      .vr-grid { flex-direction: column; text-align: center; }
+      .container { padding: 0 1.2rem; }
+    }
+  </style>
 </head>
-
 <body>
 
-<nav class="nav">
-<div class="container">
-<div class="logo">EVOLVE INC DUBAI</div>
-<div>
-<a href="#about">About</a>
-<a href="#services">Solutions</a>
-<a href="#industries">Industries</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</nav>
+<header>
+  <div class="container nav-container">
+    <div class="logo-area">
+      <img src="assets/logo.svg" alt="Akavin Logo" class="logo-img">
+      <div class="logo-text">
+        <h2>AKAVIN PRIME PARTNERS</h2>
+        <p>AI • VR • AEC • AUTOMATION</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#vr-showcase">VR Experience</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#industries">Industries</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<section class="hero">
-<div class="container">
-<h1>Transforming Business Through <span>AI, VR & Digital Innovation</span></h1>
-
-<p>
-Evolve Inc Dubai empowers businesses with Artificial Intelligence,
-Interactive Product Visualization, Virtual Reality, Augmented Reality,
-Digital Catalogs, and Business Automation solutions that drive growth,
-engagement, and transformation.
-</p>
-
-<a href="#contact" class="btn">Schedule Consultation</a>
-<a href="#services" class="btn btn-outline">Explore Solutions</a>
-</div>
+<section id="home" class="hero">
+  <div class="container hero-content" data-aos="fade-up">
+    <h1>Building a Future-Ready World Through <span>AI, VR & Digital Transformation</span></h1>
+    <p>One Ecosystem. Endless Possibilities. Helping organizations visualize better, sell better, automate smarter and grow faster.</p>
+    <div class="btn-group">
+      <a href="#contact" class="btn">📅 Book Consultation</a>
+      <a href="#contact" class="btn-outline">🎧 Schedule Demo</a>
+    </div>
+  </div>
 </section>
 
-<section id="about">
-<div class="container">
-<div class="section-title">
-<h2>About Us</h2>
-<p>Future-ready technology solutions for modern enterprises.</p>
-</div>
-
-<div class="grid">
-<div class="card">
-<h3>Our Mission</h3>
-<p>
-Help organizations visualize better, sell better, and engage customers through intelligent digital experiences.
-</p>
-</div>
-
-<div class="card">
-<h3>Our Vision</h3>
-<p>
-To become a leading transformation partner delivering AI-powered and immersive technologies globally.
-</p>
-</div>
-
-<div class="card">
-<h3>Core Expertise</h3>
-<p>
-Artificial Intelligence, VR, AR, 3D Visualization, Digital Commerce, Interactive Catalogs, and Automation.
-</p>
-</div>
-</div>
-</div>
+<section id="solutions">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <span class="badge">OUR CAPABILITIES</span>
+      <h2>Comprehensive Digital Solutions</h2>
+    </div>
+    <div class="grid">
+      <div class="card" data-aos="fade-up" data-aos-delay="100"><h3>AI Product Visualization</h3><ul><li>Room Visualization</li><li>Product Placement</li><li>Material Preview</li><li>AI Recommendations</li></ul></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="150"><h3>Virtual Reality (VR)</h3><ul><li>Property Walkthroughs</li><li>Virtual Showrooms</li><li>Training Simulations</li><li>Exhibition Experiences</li></ul></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200"><h3>Augmented Reality (AR)</h3><ul><li>Furniture Placement</li><li>Retail Engagement</li><li>Product Demonstrations</li><li>Interactive Marketing</li></ul></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="250"><h3>Digital Catalogs</h3><ul><li>Interactive Catalogs</li><li>Product Discovery</li><li>Smart Search</li><li>Rich Media Content</li></ul></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300"><h3>Business Automation</h3><ul><li>Workflow Automation</li><li>Lead Qualification</li><li>Customer Support AI</li><li>Reporting Systems</li></ul></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="350"><h3>Digital Transformation</h3><ul><li>Technology Strategy</li><li>Process Optimization</li><li>Innovation Consulting</li><li>Growth Enablement</li></ul></div>
+    </div>
+  </div>
 </section>
 
-<section>
-<div class="container">
-<div class="stats">
-<div class="stat">
-<h3>AI</h3>
-<p>Powered Experiences</p>
-</div>
-
-<div class="stat">
-<h3>VR</h3>
-<p>Immersive Solutions</p>
-</div>
-
-<div class="stat">
-<h3>AR</h3>
-<p>Interactive Engagement</p>
-</div>
-
-<div class="stat">
-<h3>24/7</h3>
-<p>Digital Innovation</p>
-</div>
-</div>
-</div>
+<section class="stats-section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Global Impact by Numbers</h2></div>
+    <div class="stats-grid">
+      <div class="stat-item"><h3><span class="counter" data-target="35">0</span>+</h3><p>Enterprise Projects</p></div>
+      <div class="stat-item"><h3><span class="counter" data-target="120">0</span>+</h3><p>VR Experiences</p></div>
+      <div class="stat-item"><h3><span class="counter" data-target="15">0</span>+</h3><p>Industry Verticals</p></div>
+      <div class="stat-item"><h3><span class="counter" data-target="98">0</span>%</h3><p>Client Satisfaction</p></div>
+    </div>
+  </div>
 </section>
 
-<section id="services">
-<div class="container">
+<section id="vr-showcase" class="vr-showcase">
+  <div class="container vr-grid">
+    <div class="vr-content" data-aos="fade-right">
+      <span class="badge">Immersive Technology</span>
+      <h2>Transform Property Sales <br>With <span style="color:var(--primary)">Virtual Reality</span></h2>
+      <p>Let buyers experience properties before they exist. Photorealistic VR walkthroughs, interactive interiors, and smart sales centers.</p>
+      <ul>
+        <li>Virtual Property Walkthroughs</li>
+        <li>Interactive Interiors & Materials</li>
+        <li>Real-Time Project Presentations</li>
+        <li>VR for Overseas Investors</li>
+        <li>Smart Sales Experience Centers</li>
+      </ul>
+      <a href="#contact" class="btn">Book a VR Demo →</a>
+    </div>
+    <div class="vr-image" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80" alt="VR Real Estate Experience" style="border-radius: 24px; width:100%">
+    </div>
+  </div>
+</section>
 
-<div class="section-title">
-<h2>Our Solutions</h2>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<h3>AI Product Visualization</h3>
-<ul>
-<li>Room Visualization</li>
-<li>Product Placement</li>
-<li>Material Preview</li>
-<li>AI Recommendations</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Virtual Reality</h3>
-<ul>
-<li>Property Walkthroughs</li>
-<li>Virtual Showrooms</li>
-<li>Training Simulations</li>
-<li>Exhibition Experiences</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Augmented Reality</h3>
-<ul>
-<li>Furniture Placement</li>
-<li>Retail Engagement</li>
-<li>Product Demonstrations</li>
-<li>Interactive Marketing</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Digital Catalogs</h3>
-<ul>
-<li>Interactive Catalogs</li>
-<li>Product Discovery</li>
-<li>Smart Search</li>
-<li>Rich Media Content</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Business Automation</h3>
-<ul>
-<li>Workflow Automation</li>
-<li>Lead Qualification</li>
-<li>Customer Support AI</li>
-<li>Reporting Systems</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Digital Transformation</h3>
-<ul>
-<li>Technology Strategy</li>
-<li>Process Optimization</li>
-<li>Innovation Consulting</li>
-<li>Growth Enablement</li>
-</ul>
-</div>
-
-</div>
-</div>
+<section id="ecosystem">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Our Integrated Ecosystem</h2><p>Connected capabilities for sustainable growth</p></div>
+    <div class="timeline">
+      <div class="timeline-node" data-aos="zoom-in"><h4>🎓 AI Academy</h4><p>Skilling & Certifications</p></div>
+      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="100"><h4>🧠 AI Consulting</h4><p>Strategy & Implementation</p></div>
+      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="200"><h4>🏗️ AI for AEC</h4><p>BIM & Construction Tech</p></div>
+      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="300"><h4>🛒 Digital Commerce</h4><p>Smart Catalogs & AI Sales</p></div>
+      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="400"><h4>🌐 Global Network</h4><p>Partners & Investors</p></div>
+    </div>
+  </div>
 </section>
 
 <section id="industries">
-<div class="container">
-
-<div class="section-title">
-<h2>Industries We Serve</h2>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<h3>AEC Industry</h3>
-<p>BIM, Digital Catalogs, Material Libraries, Project Visualization.</p>
-</div>
-
-<div class="card">
-<h3>Real Estate</h3>
-<p>Virtual Tours, AI Sales Experiences, Investor Presentations.</p>
-</div>
-
-<div class="card">
-<h3>Interior Design</h3>
-<p>Material Selection, Product Visualization, Space Planning.</p>
-</div>
-
-<div class="card">
-<h3>Manufacturing</h3>
-<p>Product Catalog Digitization and Interactive Commerce.</p>
-</div>
-
-<div class="card">
-<h3>Education</h3>
-<p>Immersive Learning and Technology Awareness Programs.</p>
-</div>
-
-<div class="card">
-<h3>Retail</h3>
-<p>Customer Engagement, Visualization, Interactive Shopping.</p>
-</div>
-
-</div>
-</div>
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Industries We Serve</h2></div>
+    <div class="grid">
+      <div class="card"><h3>AEC Industry</h3><p>BIM, Digital Catalogs, Material Libraries, Project Visualization</p></div>
+      <div class="card"><h3>Real Estate</h3><p>Virtual Tours, AI Sales Experiences, Investor Presentations</p></div>
+      <div class="card"><h3>Interior Design</h3><p>Material Selection, Product Visualization, Space Planning</p></div>
+      <div class="card"><h3>Manufacturing</h3><p>Product Catalog Digitization & Interactive Commerce</p></div>
+      <div class="card"><h3>Education</h3><p>Immersive Learning & Technology Awareness</p></div>
+      <div class="card"><h3>Retail</h3><p>Customer Engagement & Interactive Shopping</p></div>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-<div class="container">
-
-<div class="contact-box">
-
-<h2>Let's Build The Future Together</h2>
-
-<p>
-Whether you're a manufacturer, supplier, architect,
-developer, educational institution, or technology-driven
-organization, Evolve Inc Dubai can help transform your
-ideas into powerful digital experiences.
-</p>
-
-<br>
-
-<h3>Contact Us</h3>
-
-<p>
-📍 Dubai, United Arab Emirates
-</p>
-
-<p>
-📧 business@evolveincdubai.com
-</p>
-
-<p>
-📱 +91 99623 84650
-</p>
-
-<p>
-🌐 www.evolveincdubai.com
-</p>
-
-<br>
-
-<a href="mailto:business@evolveincdubai.com" class="btn">
-Get In Touch
-</a>
-
-</div>
-
-</div>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Let's Build The Future Together</h2><p>UAE | India | Global Delivery</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h4>📍 UAE</h4><p>+971 55 480 77 11</p><p>Dubai, United Arab Emirates</p></div>
+      <div class="contact-card"><h4>📍 India</h4><p>+91 99623 84650</p><p>Chennai, India</p></div>
+      <div class="contact-card"><h4>✉️ Email</h4><p>business@akavin.online</p></div>
+      <div class="contact-card"><h4>🌐 Website</h4><p>www.akavin.online</p></div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="mailto:business@akavin.online" class="btn">📧 Get in Touch</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-© 2026 Evolve Inc Dubai | AI • VR • AR • Digital Transformation
+  <h3>AKAVIN PRIME PARTNERS</h3>
+  <div class="footer-tagline">INNOVATE • EDUCATE • TRANSFORM • GROW</div>
+  <p>AI-Powered Solutions | Industry Experts | Global Perspective | Sustainable Growth</p>
+  <p style="margin-top: 1rem; font-size: 0.8rem;">© 2026 Akavin Prime Partners. All Rights Reserved.</p>
 </footer>
 
+<a href="https://wa.me/+971554807711?text=Hello%20Akavin%20Team,%20I'm%20interested%20in%20your%20AI%20and%20VR%20solutions." class="whatsapp-float" target="_blank">💬</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 100 });
+  
+  // Animated Counters
+  const counters = document.querySelectorAll('.counter');
+  let counted = false;
+  
+  function animateCounters() {
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      let current = 0;
+      const increment = Math.ceil(target / 40);
+      const update = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          counter.innerText = target;
+          clearInterval(update);
+        } else {
+          counter.innerText = current;
+        }
+      }, 30);
+    });
+  }
+  
+  const statsSection = document.querySelector('.stats-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !counted) {
+        counted = true;
+        animateCounters();
+      }
+    });
+  }, { threshold: 0.3 });
+  if (statsSection) observer.observe(statsSection);
+  
+  // Smooth navigation
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === "#" || href === "") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
 </body>
 </html>
