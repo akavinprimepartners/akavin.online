@@ -1,768 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta property="og:title" content="akavin | Architecture, Engineering, Interiors & Exteriors with Technology ">
-  <meta name="description" content="akavin delivers AI, AR, VR, AEC innovation, digital commerce, and business automation. Transform property sales with VR & AI solutions in UAE & India.">
-  <meta name="keywords" content="AI, AR, VR, AEC, Digital Transformation, Real Estate VR, BIM, Automation, Artificial Intelligence, Virtual Reality">
-  <meta name="author" content="akavin">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="akavin | Architecture, Engineering, Interiors & Exteriors with Technology ">
-  <meta property="og:description" content="Building a future-ready world through AI, AR, VR, AEC & digital innovation. Experience properties before they exist.">
-  <meta property="og:image" content="https://www.akavin.online/assets/logo.png">
-  <meta property="og:url" content="https://www.akavin.online">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="akavin">
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="akavin | Architecture, Engineering, Interiors & Exteriors with Technology">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
-  
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akavin Prime Partner – Strategic Advisory | Branding | Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <style>
+    /* ── Reset & base ── */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    :root {
-      --primary: #D90A0B;
-      --primary-dark: #A30000;
-      --primary-glow: rgba(217, 10, 11, 0.3);
-      --secondary: #767676;
-      --secondary-light: #B0B0B0;
-      --bg: #5f5f5f;
-      --card-bg: #737373;
-      --card-border: #8a8a8a;
-      --text: #FFFFFF;
-      --text-muted: #CCCCCC;
-      --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      background: #faf9f6;
+      color: #1e1e1e;
       line-height: 1.6;
-      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
-
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #1a1a1a; }
-    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
-
-    html { scroll-behavior: smooth; }
 
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 24px;
     }
 
-    /* Header */
-    header {
-      position: fixed;
+    /* ── Typography ── */
+    h1, h2, h3, .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* ── Navbar ── */
+    nav {
+      background: rgba(250, 249, 246, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 16px 0;
+      position: sticky;
       top: 0;
-      width: 100%;
-      background: rgba(95, 95, 95, 0.95);
-      backdrop-filter: blur(12px);
-      z-index: 1000;
-      border-bottom: 1px solid rgba(217, 10, 11, 0.3);
-      padding: 1.5rem 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     }
 
-    .nav-container {
+    .nav-inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
     }
 
-    .logo-area {
+    .logo {
       display: flex;
       align-items: center;
       gap: 12px;
+      text-decoration: none;
+      color: #1e1e1e;
     }
 
-    .logo-img {
-      height: 150px;
+    .logo img {
+      height: 48px;
       width: auto;
+      border-radius: 4px;
     }
 
-    .logo-text h2 {
-      font-size: 2.5rem;
+    .logo-text {
+      font-size: 1.25rem;
       font-weight: 700;
-      letter-spacing: 1px;
-      color: white;
+      letter-spacing: -0.02em;
     }
 
-    .logo-text p {
-      font-size: 1rem;
-      color: var(--primary);
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
-
-    nav { display: flex; gap: 1.8rem; flex-wrap: wrap; }
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 500;
-      transition: var(--transition);
-      font-size: 0.9rem;
-    }
-    nav a:hover { color: var(--primary); }
-
-    /* Hero */
-    .hero {
-      min-height: 100vh;
-      padding-top: 180px;
-      background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.6) 100%), url('https://images.unsplash.com/photo-1512453979798-5ea266f3e76a?auto=format&fit=crop&w=1920&q=80');
-      background-size: cover;
-      background-position: center 30%;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-content { max-width: 800px; padding: 0 2rem; }
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-      font-family: 'Michroma', sans-serif;
-    }
-    .hero h1 span { color: var(--primary); }
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-    }
-
-    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .btn, .btn-outline {
-      display: inline-block;
-      padding: 14px 32px;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: var(--transition);
-      cursor: pointer;
-      border: none;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    .btn {
-      background: var(--primary);
-      color: white;
-      box-shadow: 0 4px 12px rgba(217,10,11,0.4);
-    }
-    .btn:hover {
-      background: var(--primary-dark);
-      transform: translateY(-3px);
-    }
-    .btn-outline {
-      border: 2px solid var(--primary);
-      color: white;
-      background: transparent;
-    }
-    .btn-outline:hover {
-      background: rgba(217,10,11,0.2);
-      transform: translateY(-3px);
-    }
-
-    section { padding: 5rem 0; }
-    .section-title { text-align: center; margin-bottom: 3rem; }
-    .section-title h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .badge {
-      display: inline-block;
-      background: rgba(217,10,11,0.15);
-      color: var(--primary);
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    /* Cards */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
-      padding: 1.8rem;
-      transition: var(--transition);
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: var(--primary);
-      box-shadow: 0 20px 30px -15px rgba(217,10,11,0.2);
-    }
-    .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
-    .card ul { list-style: none; padding-left: 0; }
-    .card li {
-      padding-left: 1.2rem;
-      position: relative;
-      margin-bottom: 0.5rem;
-      color: var(--text-muted);
-    }
-    .card li::before { content: "▹"; position: absolute; left: 0; color: var(--primary); }
-
-    /* AR & VR Showcase */
-    .vr-showcase {
-      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
-      border-top: 1px solid rgba(217,10,11,0.3);
-      border-bottom: 1px solid rgba(217,10,11,0.3);
-    }
-    .vr-grid { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; }
-    .vr-content { flex: 1; }
-    .vr-content h2 { font-size: 2.3rem; margin-bottom: 1rem; }
-    .vr-content ul { list-style: none; margin: 1.5rem 0; }
-    .vr-content li { margin-bottom: 0.7rem; display: flex; align-items: center; gap: 8px; }
-    .vr-content li::before { content: "✓"; color: var(--primary); font-weight: bold; }
-    .vr-image { flex: 1; text-align: center; }
-    .vr-image img { max-width: 100%; border-radius: 24px; box-shadow: 0 20px 30px -10px black; }
-
-    /* Stats */
-    .stats-section { background: radial-gradient(circle at 10% 20%, #111, #050505); }
-    .stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; text-align: center; }
-    .stat-item h3 { font-size: 3rem; font-weight: 800; color: var(--primary); font-family: 'Michroma', sans-serif; }
-
-    /* Ecosystem */
-    .timeline { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
-    .timeline-node {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 30px;
-      width: 200px;
-      text-align: center;
-      border-bottom: 4px solid var(--primary);
-      transition: all 0.3s;
-    }
-    .timeline-node:hover { transform: scale(1.05); background: #1f1f1f; }
-
-    /* Enhanced Contact Section */
-    .contact-section { background: linear-gradient(145deg, #0e0e0e, #080808); }
-    .contact-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 3rem; }
-    .contact-card {
-      background: var(--card-bg);
-      padding: 1.5rem 2rem;
-      border-radius: 20px;
-      min-width: 200px;
-      text-align: center;
-      border: 1px solid #2a2a2a;
-      transition: var(--transition);
-    }
-    .contact-card:hover { border-color: var(--primary); transform: translateY(-5px); }
-    .contact-card h4 { color: var(--primary); margin-bottom: 0.5rem; }
-    .contact-card a { color: var(--text-muted); text-decoration: none; transition: var(--transition); }
-    .contact-card a:hover { color: var(--primary); }
-
-    /* Advanced Contact Form */
-    .form-container {
-      max-width: 800px;
-      margin: 2rem auto 0;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 28px;
-      padding: 2rem;
-      transition: var(--transition);
-    }
-    .form-container:hover { border-color: var(--primary); box-shadow: 0 20px 35px -12px rgba(217,10,11,0.15); }
-    
-    .form-header { text-align: center; margin-bottom: 2rem; }
-    .form-header h3 { font-size: 1.6rem; margin-bottom: 0.5rem; color: white; }
-    .form-header p { color: var(--text-muted); font-size: 0.9rem; }
-    
-    .form-group { margin-bottom: 1.3rem; }
-    .form-group label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-      color: var(--text-muted);
-    }
-    .form-group label i { color: var(--primary); width: 18px; }
-    .required-star { color: var(--primary); font-size: 1rem; margin-left: 4px; }
-    
-    .form-group input, 
-    .form-group select, 
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 16px;
-      background: #1a1a1a;
-      border: 1px solid var(--card-border);
-      border-radius: 14px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.9rem;
-      color: var(--text);
-      transition: var(--transition);
-      outline: none;
-    }
-    .form-group input:focus, 
-    .form-group select:focus, 
-    .form-group textarea:focus {
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(217,10,11,0.2);
-    }
-    .form-group textarea { resize: vertical; min-height: 100px; }
-    
-    .double-row { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .double-row .form-group { flex: 1; margin-bottom: 0; }
-    
-    .phone-hint {
+    .logo-sub {
       font-size: 0.7rem;
-      color: var(--secondary-light);
-      margin-top: 5px;
+      font-weight: 400;
+      color: #666;
       display: block;
+      margin-top: -2px;
+      letter-spacing: 0.04em;
     }
-    
-    .submit-btn {
-      width: 100%;
-      padding: 14px;
-      background: var(--primary);
-      border: none;
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #1e1e1e;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #8b5a2b;
+    }
+
+    .btn-primary {
+      background: #1e1e1e;
+      color: #faf9f6 !important;
+      padding: 10px 28px;
       border-radius: 40px;
       font-weight: 600;
-      font-size: 1rem;
-      color: white;
-      cursor: pointer;
-      transition: var(--transition);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 0.5rem;
-    }
-    .submit-btn:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-    .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-    
-    .form-status {
-      margin-top: 1rem;
-      padding: 12px;
-      border-radius: 40px;
-      text-align: center;
       font-size: 0.85rem;
+      transition: background 0.3s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #3d2a1a;
+      transform: translateY(-1px);
+    }
+
+    .mobile-toggle {
       display: none;
-    }
-    .form-status.success {
-      background: rgba(46, 204, 113, 0.15);
-      border: 1px solid #2ecc71;
-      color: #2ecc71;
-      display: block;
-    }
-    .form-status.error {
-      background: rgba(217, 10, 11, 0.15);
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #1e1e1e;
     }
 
-    /* Footer */
-    footer {
-      background: #020202;
-      text-align: center;
-      padding: 3rem 1rem;
-      border-top: 1px solid rgba(217,10,11,0.2);
+    /* ── Hero ── */
+    .hero {
+      padding: 80px 0 60px;
+      background: linear-gradient(180deg, #faf9f6 0%, #f3efe8 100%);
     }
-    .footer-tagline { color: var(--primary); font-weight: 600; margin: 1rem 0; }
 
-    /* WhatsApp Float */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25d366;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
       align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-      z-index: 999;
-      text-decoration: none;
-      color: white;
-      transition: 0.2s;
     }
-    .whatsapp-float:hover { transform: scale(1.1); background: #20b859; }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-container { flex-direction: column; text-align: center; }
-      nav { justify-content: center; gap: 1rem; }
-      .hero h1 { font-size: 2.2rem; }
-      .section-title h2 { font-size: 1.8rem; }
-      .vr-grid { flex-direction: column; text-align: center; }
-      .container { padding: 0 1.2rem; }
-      .double-row { flex-direction: column; gap: 1.3rem; }
-      .double-row .form-group { margin-bottom: 0; }
-      .form-container { padding: 1.5rem; }
+    .hero h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
     }
+
+    .hero h1 span {
+      color: #8b5a2b;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #1e1e1e;
+      padding: 10px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #1e1e1e;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn-outline:hover {
+      background: #1e1e1e;
+      color: #faf9f6;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    }
+
+    /* ── Pillars (icons as emoji placeholders) ── */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 48px;
+    }
+
+    .section-header h2 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: #555;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(0, 0, 0, 0.02);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .pillar-icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .pillar-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .pillar-card p {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* ── Services table ── */
+    .services-table-wrap {
+      overflow-x: auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.02);
+    }
+
+    .services-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .services-table th {
+      text-align: left;
+      padding: 20px 24px;
+      background: #f8f6f2;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .services-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid #f0ede8;
+    }
+
+    .services-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .services-table td:first-child {
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+
+    /* ── Process ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      counter-reset: step;
+    }
+
+    .step-card {
+      background: white;
+      padding: 32px 20px;
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.02);
+      position: relative;
+    }
+
+    .step-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #e8ddd0;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .step-card h3 {
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .step-card p {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* ── Divisions ── */
+    .divisions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .division-card {
+      background: white;
+      padding: 28px 24px;
+      border-radius: 16px;
+      border-left: 4px solid #8b5a2b;
+      transition: transform 0.3s;
+    }
+
+    .division-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .division-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .division-card .div-icon {
+      font-size: 1.6rem;
+      margin-right: 8px;
+    }
+
+    .division-card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .division-link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #8b5a2b;
+      text-decoration: none;
+    }
+
+    .division-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #1e1e1e;
+      color: #c8c8c8;
+      padding: 60px 0 30px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #c8c8c8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #faf9f6;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .logo img {
+      height: 40px;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer-brand .logo-text {
+      color: #faf9f6;
+    }
+
+    .footer-brand .logo-sub {
+      color: #999;
+    }
+
+    .footer-col h4 {
+      color: #faf9f6;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #faf9f6;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    /* ── Utility ── */
+    .text-center { text-align: center; }
+    .mt-16 { margin-top: 16px; }
+    .mb-16 { margin-bottom: 16px; }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Akavin Prime Partner logo" />
+        <div>
+          <span class="logo-text">Akavin Prime Partner</span>
+          <span class="logo-sub">Strategic Advisory · Branding · Growth</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#contact">Contact</a>
+        <a href="#start" class="btn-primary">Get Started</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
 
-<header>
-  <div class="container nav-container">
-    <div class="logo-area">
-      <img src="assets/logo.png" alt="akavin Logo" class="logo-img">
-      <div class="logo-text">
-        <h2>akavin</h2>
-        <p>Architecture, Engineering, Interiors & Exteriors with Technology</p>
+  <!-- Hero -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div>
+        <h1>Strategy with <span>measurable impact</span></h1>
+        <p>We collaborate with entrepreneurs, enterprises, and institutions to drive sustainable growth through integrated strategy, branding, and operational excellence.</p>
+        <div class="hero-actions">
+          <a href="#start" class="btn-primary">Start your journey</a>
+          <a href="#services" class="btn-outline">Explore services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/logo.png" alt="Akavin Prime Partner" style="max-height: 320px; width: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.05);" />
       </div>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#solutions">Solutions</a>
-      <a href="#vr-showcase">AR / VR Experience</a>
-      <a href="#ecosystem">Ecosystem</a>
-      <a href="#industries">Industries</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  </section>
 
-<section id="home" class="hero">
-  <div class="container hero-content" data-aos="fade-up">
-    <h1>Building a Future-Ready World Through <span>AI, AR, VR, Automation & Digital Transformation</span></h1>
-    <p>One Ecosystem. Endless Possibilities. Helping organizations visualize better, sell better, automate smarter and grow faster.</p>
-    <div class="btn-group">
-      <a href="#contact" class="btn">📅 Book Consultation</a>
-      <a href="#contact" class="btn-outline">🎧 Schedule Demo</a>
-    </div>
-  </div>
-</section>
-
-<section id="solutions">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <span class="badge">OUR CAPABILITIES</span>
-      <h2>Comprehensive Digital Solutions</h2>
-    </div>
-    <div class="grid">
-      <div class="card" data-aos="fade-up" data-aos-delay="100"><h3>AI Product Visualization</h3><ul><li>Room Visualization</li><li>Product Placement</li><li>Material Preview</li><li>AI Recommendations</li></ul></div>
-      <div class="card" data-aos="fade-up" data-aos-delay="150"><h3>Virtual Reality (VR)</h3><ul><li>Property Walkthroughs</li><li>Virtual Showrooms</li><li>Training Simulations</li><li>Exhibition Experiences</li></ul></div>
-      <div class="card" data-aos="fade-up" data-aos-delay="200"><h3>Augmented Reality (AR)</h3><ul><li>Furniture Placement</li><li>Retail Engagement</li><li>Product Demonstrations</li><li>Interactive Marketing</li></ul></div>
-      <div class="card" data-aos="fade-up" data-aos-delay="250"><h3>Digital Catalogs</h3><ul><li>Interactive Catalogs</li><li>Product Discovery</li><li>Smart Search</li><li>Rich Media Content</li></ul></div>
-      <div class="card" data-aos="fade-up" data-aos-delay="300"><h3>Business Automation</h3><ul><li>Workflow Automation</li><li>Lead Qualification</li><li>Customer Support AI</li><li>Reporting Systems</li></ul></div>
-      <div class="card" data-aos="fade-up" data-aos-delay="350"><h3>Digital Transformation</h3><ul><li>Technology Strategy</li><li>Process Optimization</li><li>Innovation Consulting</li><li>Growth Enablement</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<section class="stats-section">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up"><h2>Global Impact by Numbers</h2></div>
-    <div class="stats-grid">
-      <div class="stat-item"><h3><span class="counter" data-target="35">0</span>+</h3><p>Enterprise Projects</p></div>
-      <div class="stat-item"><h3><span class="counter" data-target="120">0</span>+</h3><p>AR/VR Experiences</p></div>
-      <div class="stat-item"><h3><span class="counter" data-target="15">0</span>+</h3><p>Industry Verticals</p></div>
-      <div class="stat-item"><h3><span class="counter" data-target="98">0</span>%</h3><p>Client Satisfaction</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="vr-showcase" class="vr-showcase">
-  <div class="container vr-grid">
-    <div class="vr-content" data-aos="fade-right">
-      <span class="badge">Immersive Technology</span>
-      <h2>Transform Property Sales <br>With <span style="color:var(--primary)">Virtual Reality</span></h2>
-      <p>Let buyers experience properties before they exist. Photorealistic AR/VR walkthroughs, interactive interiors, and smart sales centers.</p>
-      <ul>
-        <li>Virtual Property Walkthroughs</li>
-        <li>Interactive Interiors & Materials</li>
-        <li>Real-Time Project Presentations</li>
-        <li>AR/VR for Overseas Investors</li>
-        <li>Smart Sales Experience Centers</li>
-      </ul>
-      <a href="#contact" class="btn">Book a AR/VR Demo →</a>
-    </div>
-    <div class="vr-image" data-aos="fade-left">
-      <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80" alt="AR/VR Real Estate Experience" style="border-radius: 24px; width:100%">
-    </div>
-  </div>
-</section>
-
-<section id="ecosystem">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up"><h2>Our Integrated Ecosystem</h2><p>Connected capabilities for sustainable growth</p></div>
-    <div class="timeline">
-      <div class="timeline-node" data-aos="zoom-in"><h4>🎓 AI Academy</h4><p>Skilling & Certifications</p></div>
-      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="100"><h4>🧠 AI Consulting</h4><p>Strategy & Implementation</p></div>
-      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="200"><h4>🏗️ AI for AEC</h4><p>BIM, Interiors & Exteriors Tech</p></div>
-      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="300"><h4>🛒 Digital Commerce</h4><p>Smart Catalogs & AI Sales</p></div>
-      <div class="timeline-node" data-aos="zoom-in" data-aos-delay="400"><h4>🌐 Global Network</h4><p>Partners & Investors</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="industries">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up"><h2>Industries We Serve</h2></div>
-    <div class="grid">
-      <div class="card"><h3>AEC Industry</h3><p>BIM, Digital Catalogs, Material Libraries, Project Visualization</p></div>
-      <div class="card"><h3>Real Estate</h3><p>Virtual Tours, AI Sales Experiences, Investor Presentations</p></div>
-      <div class="card"><h3>Interior Design</h3><p>Material Selection, Product Visualization, Space Planning</p></div>
-      <div class="card"><h3>Manufacturing</h3><p>Product Catalog Digitization & Interactive Commerce</p></div>
-      <div class="card"><h3>Education</h3><p>Immersive Learning & Technology Awareness</p></div>
-      <div class="card"><h3>Retail</h3><p>Customer Engagement & Interactive Shopping</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Enhanced Contact Section with Advanced Form -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Let's Build The Future Together</h2>
-      <p>UAE | India | Global Delivery</p>
-    </div>
-    <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
-      <div class="contact-card"><h4><i class="fas fa-map-marker-alt"></i> UAE</h4><p><a href="tel:+971554807711">+971 55 480 7711</a></p><p>Dubai, United Arab Emirates</p></div>
-      <div class="contact-card"><h4><i class="fas fa-map-marker-alt"></i> India</h4><p><a href="tel:+919962384650">+91 99623 84650</a></p><p>Chennai, India</p></div>
-      <div class="contact-card"><h4><i class="fas fa-envelope"></i> Email</h4><p><a href="mailto:business@akavin.online">business@akavin.online</a></p></div>
-      <div class="contact-card"><h4><i class="fas fa-globe"></i> Website</h4><p><a href="https://www.akavin.online" target="_blank" rel="noopener">www.akavin.online</a></p></div>
-    </div>
-
-    <!-- Advanced Contact Form with all required fields -->
-    <div class="form-container" data-aos="fade-up" data-aos-delay="200">
-      <div class="form-header">
-        <h3><i class="fas fa-paper-plane" style="color: var(--primary);"></i> Send us a message</h3>
-        <p>Fill out the form below and our team will get back to you within 24 hours</p>
+  <!-- Core Pillars -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Core Pillars</h2>
+        <p>Five foundations that drive every engagement.</p>
       </div>
-      
-      <form id="akavinContactForm" action="https://formspree.io/f/mzdqzeoy" method="POST">
-        <input type="hidden" name="_subject" value="New Lead from akavin Contact Form">
-        
-        <div class="form-group">
-          <label><i class="fas fa-user"></i> Your Name <span class="required-star">*</span></label>
-          <input type="text" name="Your Name" placeholder="Enter your full name" required>
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-envelope"></i> Email ID <span class="required-star">*</span></label>
-          <input type="email" name="Email ID" placeholder="you@company.com" required>
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-phone-alt"></i> Phone Number with country code</label>
-          <input type="tel" name="Phone Number" placeholder="+1 (XXX) XXX-XXXX" pattern="^\+?[0-9\s\-\(\)]{8,20}$" title="Please include country code, e.g., +1 (555) 123-4567">
-          <span class="phone-hint"><i class="fas fa-info-circle"></i> Format: (XXX) XXX-XXXX or +1234567890</span>
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-building"></i> Company Name</label>
-          <input type="text" name="Company Name" placeholder="Your organization name">
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-search"></i> Looking for <span class="required-star">*</span></label>
-          <select name="Looking for" required>
-            <option value="" disabled selected>– Select an option –</option>
-            <option value="Consulting">Consulting</option>
-            <option value="Solution">Solution</option>
-            <option value="Product">Product</option>
-            <option value="Training">Training</option>
-            <option value="E-Commerce">E-Commerce</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-pen-fancy"></i> Description of the request <span class="required-star">*</span></label>
-          <textarea name="Description of the request" placeholder="Briefly describe your needs, project scope, or any specific requirement..." required></textarea>
-        </div>
-               <div class="double-row">
-                  <div class="form-group">
-            <label><i class="fas fa-bolt"></i> Urgency</label>
-            <select name="Implementation Immediate">
-              <option value="" disabled selected>Select urgency</option>
-              <option value="Immediately">Immediately (ASAP)</option>
-              <option value="Flexible">Flexible</option>
-              <option value="Within 2 weeks">Within 2 weeks</option>
-            </select>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label><i class="fas fa-comment-dots"></i> Any Additional Comments</label>
-          <textarea name="Any Additional Comments" placeholder="Share any extra details, references, or deadlines..."></textarea>
-        </div>
-        
-        <button type="submit" class="submit-btn" id="formSubmitBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
-        <div id="formStatusMsg" class="form-status"></div>
-      </form>
+      <div class="pillars-grid">
+        <div class="pillar-card"><span class="pillar-icon">🌐</span><h3>Strategy &amp; Governance</h3><p>Actionable frameworks &amp; operating models</p></div>
+        <div class="pillar-card"><span class="pillar-icon">🎯</span><h3>Branding &amp; Positioning</h3><p>Unique narratives that build trust</p></div>
+        <div class="pillar-card"><span class="pillar-icon">🚀</span><h3>Digital Transformation</h3><p>Systems &amp; tools that accelerate growth</p></div>
+        <div class="pillar-card"><span class="pillar-icon">🤝</span><h3>Partnership &amp; Advisory</h3><p>Collaboration &amp; ecosystem engagement</p></div>
+        <div class="pillar-card"><span class="pillar-icon">💡</span><h3>Capacity Building</h3><p>Structure, skill &amp; strategic alignment</p></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <h3>akavin</h3>
-  <div class="footer-tagline">INNOVATE • EDUCATE • TRANSFORM • GROW</div>
-  <p>AI-Powered Solutions | Industry Experts | Global Perspective | Sustainable Growth</p>
-  <p style="margin-top: 1rem; font-size: 0.8rem;">© 2026 akavin. All Rights Reserved.</p>
-</footer>
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>End-to-end support for your organisation’s evolution.</p>
+      </div>
+      <div class="services-table-wrap">
+        <table class="services-table">
+          <thead>
+            <tr><th>Category</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Business Strategy</td><td>Market analysis, strategic mapping, structured growth roadmaps</td></tr>
+            <tr><td>Branding &amp; Identity</td><td>Brand architecture, design systems, corporate communication</td></tr>
+            <tr><td>Digital Presence</td><td>Website, content, and social engagement strategy</td></tr>
+            <tr><td>Advisory &amp; Partnerships</td><td>Joint ventures, alliances, channel development</td></tr>
+            <tr><td>Corporate Support</td><td>Governance, operations, resource structuring</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-<a href="https://wa.me/+971554807711?text=Hello%20akavin%20Team,%20I'm%20interested%20in%20your%20AI%20and%20VR%20solutions." class="whatsapp-float" target="_blank">💬</a>
+  <!-- Strategic Process -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Strategic Process</h2>
+        <p>Five steps from discovery to measurable impact.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step-card"><div class="step-number">01</div><h3>Discovery</h3><p>Understand your goals &amp; environment</p></div>
+        <div class="step-card"><div class="step-number">02</div><h3>Define</h3><p>Clarify value &amp; positioning</p></div>
+        <div class="step-card"><div class="step-number">03</div><h3>Design</h3><p>Build brand, assets &amp; framework</p></div>
+        <div class="step-card"><div class="step-number">04</div><h3>Deploy</h3><p>Launch campaigns &amp; tools for growth</p></div>
+        <div class="step-card"><div class="step-number">05</div><h3>Deliver Impact</h3><p>Track, optimise &amp; scale</p></div>
+      </div>
+    </div>
+  </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 800, once: true, offset: 100 });
-  
-  // Animated Counters
-  const counters = document.querySelectorAll('.counter');
-  let counted = false;
-  
-  function animateCounters() {
-    counters.forEach(counter => {
-      const target = parseInt(counter.getAttribute('data-target'));
-      let current = 0;
-      const increment = Math.ceil(target / 40);
-      const update = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          counter.innerText = target;
-          clearInterval(update);
-        } else {
-          counter.innerText = current;
-        }
-      }, 30);
+  <!-- Extended Divisions -->
+  <section class="section" id="divisions">
+    <div class="container">
+      <div class="section-header">
+        <h2>Extended Divisions</h2>
+        <p>Specialised units delivering focused impact.</p>
+      </div>
+      <div class="divisions-grid">
+        <div class="division-card">
+          <h3><span class="div-icon">🩺</span>Prime CareX Supplies</h3>
+          <p>Healthcare &amp; dental consumables – B2B supply to hospitals &amp; clinics.</p>
+          <a href="#" class="division-link">Healthy Smile dental supplies →</a>
+        </div>
+        <div class="division-card">
+          <h3><span class="div-icon">🤝</span>Lead One Partners</h3>
+          <p>Strategic collaboration network connecting businesses, investors &amp; advisors.</p>
+          <a href="#" class="division-link">Sanjeeth Automobiles Coimbatore →</a>
+        </div>
+        <div class="division-card">
+          <h3><span class="div-icon">🌐</span>Prime Aster Strata</h3>
+          <p>Brand architecture, digital transformation &amp; special children education.</p>
+          <a href="https://AVSSchool.com" target="_blank" class="division-link">AVSSchool.com →</a>
+        </div>
+        <div class="division-card">
+          <h3><span class="div-icon">🧠</span>ABIE</h3>
+          <p>Our newest strategic unit – learn more at the dedicated portal.</p>
+          <a href="https://abie.akavin.online" target="_blank" class="division-link">abie.akavin.online →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="start">
+    <div class="container" style="text-align: center; background: #f3efe8; padding: 60px 40px; border-radius: 24px;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Let’s build strategy with measurable impact</h2>
+      <p style="color: #444; max-width: 500px; margin: 0 auto 28px;">Get in touch today and start your transformation journey.</p>
+      <a href="mailto:business@akavin.online" class="btn-primary" style="font-size: 1rem; padding: 14px 44px;">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Akavin Prime Partner" />
+            <div>
+              <span class="logo-text">Akavin Prime Partner</span>
+              <span class="logo-sub">Strategic Advisory · Branding · Growth</span>
+            </div>
+          </a>
+          <p style="margin-top: 16px; font-size: 0.85rem; max-width: 300px;">Turning purpose into performance across healthcare, education, social impact, and trade.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Office</h4>
+          <ul>
+            <li>Chennai, Tamil Nadu</li>
+            <li>India</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919962384650">+91 9962384650</a></li>
+            <li><a href="mailto:business@akavin.online">business@akavin.online</a></li>
+            <li><a href="https://linkedin.com/company/akavin-prime-partner" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#divisions">Divisions</a></li>
+            <li><a href="#start">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Akavin Prime Partner (OPC) Pvt. Ltd.</span>
+        <span>Designed with purpose.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
     });
-  }
-  
-  const statsSection = document.querySelector('.stats-section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !counted) {
-        counted = true;
-        animateCounters();
-      }
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
     });
-  }, { threshold: 0.3 });
-  if (statsSection) observer.observe(statsSection);
-  
-  // Form submission with AJAX for better UX
-  const form = document.getElementById('akavinContactForm');
-  const statusDiv = document.getElementById('formStatusMsg');
-  const submitBtn = document.getElementById('formSubmitBtn');
-  
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      statusDiv.className = 'form-status';
-      statusDiv.style.display = 'none';
-      
-      // Basic validation
-      const name = form.querySelector('input[name="Your Name"]');
-      const email = form.querySelector('input[name="Email ID"]');
-      const looking = form.querySelector('select[name="Looking for"]');
-      const desc = form.querySelector('textarea[name="Description of the request"]');
-      
-      if (!name.value.trim()) {
-        statusDiv.textContent = '❌ Please enter your full name.';
-        statusDiv.classList.add('error');
-        statusDiv.style.display = 'block';
-        name.focus();
-        return;
-      }
-      const emailPattern = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
-      if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
-        statusDiv.textContent = '❌ Please provide a valid email address.';
-        statusDiv.classList.add('error');
-        statusDiv.style.display = 'block';
-        email.focus();
-        return;
-      }
-      if (!looking.value || looking.value === "") {
-        statusDiv.textContent = '❌ Please select what you are looking for.';
-        statusDiv.classList.add('error');
-        statusDiv.style.display = 'block';
-        looking.focus();
-        return;
-      }
-      if (!desc.value.trim()) {
-        statusDiv.textContent = '❌ Please provide a description of your request.';
-        statusDiv.classList.add('error');
-        statusDiv.style.display = 'block';
-        desc.focus();
-        return;
-      }
-      
-      const formData = new FormData(form);
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
-      
-      try {
-        const response = await fetch('https://formspree.io/f/mzdqzeoy', {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-        
-        if (response.ok) {
-          statusDiv.textContent = '✓ Thank you! Your message has been sent successfully. We’ll get back to you shortly.';
-          statusDiv.classList.add('success');
-          statusDiv.style.display = 'block';
-          form.reset();
-          // Reset selects to placeholder
-          form.querySelectorAll('select').forEach(select => { select.selectedIndex = 0; });
-        } else {
-          const errorData = await response.json();
-          let errMsg = "Submission failed. ";
-          if (errorData && errorData.errors) errMsg += errorData.errors.map(e => e.message).join(', ');
-          else errMsg += "Please try again later.";
-          statusDiv.textContent = `❌ ${errMsg}`;
-          statusDiv.classList.add('error');
-          statusDiv.style.display = 'block';
-        }
-      } catch (err) {
-        statusDiv.textContent = '❌ Network error. Please check your connection and try again.';
-        statusDiv.classList.add('error');
-        statusDiv.style.display = 'block';
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-      }
-    });
-  }
-  
-  // Smooth navigation
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === "#" || href === "") return;
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-</script>
+  </script>
 </body>
 </html>
